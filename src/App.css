@@ -41,7 +41,6 @@
 .container-side-bar {
   display: grid;
   grid-template-rows: 80vh 20vh;
-  background-color: rgba(0, 128, 128, 0.6);
 }
 
 .item-side-bar-main {
@@ -61,10 +60,17 @@
 .item-main {
   grid-column-start: 2;
   grid-row-start: 1;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-height: 20%;
 }
 
-.content-box {
-  margin-top: 50px;
+.item-main-small {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  margin-top: 75px;
   margin-left: 50px;
   margin-right: 50px;
   min-height: 20%;

@@ -14,7 +14,6 @@ const Error = () => {
 
     return <React.Fragment>
         <Paper
-            className="content-box"
             elevation={0}
         >
             <div className="content">Error: Page not found :( </div>
