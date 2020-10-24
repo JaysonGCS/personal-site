@@ -55,7 +55,7 @@ const useWindowSize = () => {
 function App() {
   const size = useWindowSize();
   let [isSmallScreen, setIsSmallScreen] = useState(false);
-  const shouldSetIsSmallScreen = (size.width >= 1000) ? false : true;
+  const shouldSetIsSmallScreen = (size.width >= 1250) ? false : true;
   useEffect(() => {
     setIsSmallScreen(shouldSetIsSmallScreen);
   }, [shouldSetIsSmallScreen])

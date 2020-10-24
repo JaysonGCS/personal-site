@@ -35,12 +35,15 @@
 .container {
   display: inline-grid;
   grid-template-columns: 25vw 75vw;
-  /* justify-items: start; */
+  width: 100%
+    /* justify-items: start; */
 }
 
 .container-side-bar {
   display: grid;
   grid-template-rows: 80vh 20vh;
+  position: fixed;
+  width: 25vw
 }
 
 .item-side-bar-main {
