@@ -10,13 +10,21 @@ const useStyles = makeStyles((theme) => ({
             margin: theme.spacing(1),
         },
     },
-    small: {
+    avatarSmall: {
         width: theme.spacing(3),
         height: theme.spacing(3),
     },
-    large: {
+    avatarLarge: {
         width: theme.spacing(20),
         height: theme.spacing(20),
+        marginLeft: "auto",
+        marginRight: "auto",
+    },
+    avatarWrapper: {
+        display: "inline-block",
+        marginLeft: "auto",
+        marginRight: "auto",
+        textAlign: "center",
     }
 }));
 
@@ -45,10 +53,9 @@ const SideBarMain = () => {
             <ListItem
                 button
                 onClick={(event) => handleListItemClick(event, 1, "/")}
-                alignItems="center"
             >
-                <div>
-                    <Avatar alt="Jayson" src={process.env.PUBLIC_URL + "/static/images/avatar/me.jpg"} className={classes.large} />
+                <div className={classes.avatarWrapper}>
+                    <Avatar alt="Jayson" src={process.env.PUBLIC_URL + "/static/images/avatar/me.jpg"} className={classes.avatarLarge} />
                     <Typography variant="h5" gutterBottom>Jayson (Goh Chung Sern)</Typography>
                     <Typography variant="h6" gutterBottom>"I am a..."</Typography>
                 </div>

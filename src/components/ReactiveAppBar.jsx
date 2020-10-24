@@ -34,39 +34,37 @@ const ReactiveAppBar = (props) => {
         if (isSmallScreen) {
             return (
                 <React.Fragment>
-                    <React.Fragment >
-                        <Drawer anchor={"top"} open={isDrawerOpen} onClose={() => setDrawerStatus(false)}>
-                            <List>
-                                <ListItem
-                                    button
-                                    selected={selectedIndex === 1}
-                                    onClick={(event) => {
-                                        handleListItemClick(event, 1, "/")
-                                        setDrawerStatus(false)
-                                    }}>
-                                    <ListItemText primary="About" />
-                                </ListItem>
-                                <ListItem
-                                    button
-                                    selected={selectedIndex === 2}
-                                    onClick={(event) => {
-                                        handleListItemClick(event, 2, "/projects")
-                                        setDrawerStatus(false)
-                                    }}>
-                                    <ListItemText primary="Projects" />
-                                </ListItem>
-                                <ListItem
-                                    button
-                                    selected={selectedIndex === 3}
-                                    onClick={(event) => {
-                                        handleListItemClick(event, 3, "/resume")
-                                        setDrawerStatus(false)
-                                    }}>
-                                    <ListItemText primary="Resume" />
-                                </ListItem>
-                            </List>
-                        </Drawer>
-                    </React.Fragment>
+                    <Drawer anchor={"top"} open={isDrawerOpen} onClose={() => setDrawerStatus(false)}>
+                        <List>
+                            <ListItem
+                                button
+                                selected={selectedIndex === 1}
+                                onClick={(event) => {
+                                    handleListItemClick(event, 1, "/")
+                                    setDrawerStatus(false)
+                                }}>
+                                <ListItemText primary="About" />
+                            </ListItem>
+                            <ListItem
+                                button
+                                selected={selectedIndex === 2}
+                                onClick={(event) => {
+                                    handleListItemClick(event, 2, "/projects")
+                                    setDrawerStatus(false)
+                                }}>
+                                <ListItemText primary="Projects" />
+                            </ListItem>
+                            <ListItem
+                                button
+                                selected={selectedIndex === 3}
+                                onClick={(event) => {
+                                    handleListItemClick(event, 3, "/resume")
+                                    setDrawerStatus(false)
+                                }}>
+                                <ListItemText primary="Resume" />
+                            </ListItem>
+                        </List>
+                    </Drawer>
                     <AppBar >
                         <Toolbar>
                             <IconButton
