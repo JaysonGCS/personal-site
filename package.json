@@ -1,6 +1,6 @@
 {
-  "homepage": "http://JaysonGCS.github.io",
-  "name": "react-deploy",
+  "homepage": "http://JaysonGCS.github.io/personal-site",
+  "name": "personal-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
