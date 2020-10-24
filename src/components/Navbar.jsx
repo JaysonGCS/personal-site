@@ -49,7 +49,7 @@ const Navbar = () => {
                     alignItems="center"
                 >
                     <div>
-                        <Avatar alt="Jayson" src="/static/images/avatar/me.jpg" className={classes.large} />
+                        <Avatar alt="Jayson" src={process.env.PUBLIC_URL + "/static/images/avatar/me.jpg"} className={classes.large} />
                         <Typography variant="h5" gutterBottom>Jayson (Goh Chung Sern)</Typography>
                         <Typography variant="h6" gutterBottom>"I am a..."</Typography>
                     </div>
